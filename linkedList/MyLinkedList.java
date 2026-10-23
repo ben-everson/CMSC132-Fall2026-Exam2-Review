@@ -21,11 +21,28 @@ public class MyLinkedList {
 
     }
     private Node head;  // will refer to the first node
+    private int size; //will track the number of nodes in the list
     
     public MyLinkedList() {
         head= null;
     }
     
+    /*
+     * this method should return the data of the node at index i. Nodes are 
+     * 0-indexed. If the index is outside the bounds of the list- which will always 
+     * be the case if the list is empty- then an illegal argument exception should
+     * be thrown
+     */
+    public int get(int index) {
+		throw new UnsupportedOperationException("You must write this method.");
+    }
+    
+    /*
+     * this method should return the number of nodes in the current object list
+     */
+    public int size() {
+		throw new UnsupportedOperationException("You must write this method.");
+    }
     
     /*
      * this method should create a copy of the current object list, but with all 

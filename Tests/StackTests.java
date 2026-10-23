@@ -1,8 +1,5 @@
 package Tests;
 
-// (c) Larry Herman, 2026.  You are allowed to use this code yourself, but
-// not to provide it to anyone else.
-
 import org.junit.*;
 
 import polymorphicList.Stack;
