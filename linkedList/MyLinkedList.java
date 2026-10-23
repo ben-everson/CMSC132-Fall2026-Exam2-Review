@@ -1,0 +1,103 @@
+package linkedList;
+
+//In addition to these linkedList problems I HIGHLY encourage you to complete
+//problems 2-4 from HW 4. These problems are closer to what you may see on an exam
+// and are a higher priority than these problems
+
+public class MyLinkedList {
+
+    private static class Node {
+
+        // I'm private!  But my outer class can see things inside me,
+        // even though they're private too!
+
+        private int data;
+        private Node next;
+
+        private Node(int data) {
+            this.data= data;
+            next= null;
+        }
+
+    }
+    private Node head;  // will refer to the first node
+    
+    public MyLinkedList() {
+        head= null;
+    }
+    
+    
+    /*
+     * this method should create a copy of the current object list, but with all 
+     * of its elements in reversed order from the current object list. If the 
+     * current list is empty, the method should of course return an empty list. 
+     * For example, if this method was called on a list containing elements
+     *  5,2,1,7,9 in that order, then this method would return a new list
+     *  containing 9,7,1,2,5 in that order. The returned list should be entirely 
+     *  separate from the original list, and your method should not modify the 
+     *  original list in any way. This method should be efficient, this means you 
+     *  should not iterate through the list more than once.
+     */
+    public MyLinkedList reversedCopy() {
+		throw new UnsupportedOperationException("You must write this method.");
+    }
+    
+    /*
+     * this method should reverse the order of the current linked list. You should
+     * not create any new nodes or a new list. If the current list is empty, then
+     * nothing should be done. Note that this method should also be efficient! 
+     * You should not iterate through the list more than once. For example, if this
+     * method was called on a list containing the elements 5,2,1,7,9 in that order 
+     * then after this method executes, the list should contain 9,7,1,2,5
+     */
+    public void reverseInPlace() {
+		throw new UnsupportedOperationException("You must write this method.");
+    }
+    
+
+    // adds an element to the beginning of the list
+    public void add(int data) {
+        Node n= new Node(data);
+        n.next= head;
+        head= n;
+    }
+
+    //appends an element to the end of the list
+    public void append(int data) {
+    		head = append(data, head);
+    }
+    //private helper method to keep track of the current node through
+    //recursive calls
+    private Node append(int data, Node curr) {
+    	
+	    	//if we are at the end of the list, make a new node
+	    	if (curr == null) { 
+	    		curr =  new Node(data);
+	    		
+	    	//if not at the end of the list, 
+	    	} else {
+	    		curr.next = append(data, curr.next);
+	    	}
+	    	return curr;
+    }
+    
+    
+    // prints all the elements in the current object list, ending with
+    // a newline
+    public void printList() {
+        Node current= head;
+
+        // note this prints an extra blank space after the last element- we
+        // don't care about that here, but how could it be avoided if
+        // desired (without calling any String class methods)?
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current= current.next;
+        }
+
+        System.out.println();
+    }
+    
+    
+
+}
