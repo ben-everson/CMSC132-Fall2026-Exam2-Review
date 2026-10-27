@@ -11,10 +11,10 @@ public class MyLinkedList {
         // I'm private!  But my outer class can see things inside me,
         // even though they're private too!
 
-        private int data;
+        private double data;
         private Node next;
 
-        private Node(int data) {
+        private Node(double data) {
             this.data= data;
             next= null;
         }
@@ -71,6 +71,21 @@ public class MyLinkedList {
 		throw new UnsupportedOperationException("You must write this method.");
     }
     
+    /*
+     * this method should return a reference to the node before the node with 
+     * the minimum data value. For the purpose of this method, assume the list it
+     * is being called on contains a dummy head node with the data value of NaN. If
+     * this is not the case, and the head is null, the method should simply return 
+     * without doing any unnecessary work. 
+     * The list should not be modified in any way.
+     * Note that this method should be efficient! You should not iterate through 
+     * the list more than once. For example, if the method was called on the list
+     * 0,3,5,7,2 then a reference to the node containing 7 should be returned. 
+     */
+    public Node beforeMin() {
+		throw new UnsupportedOperationException("You must write this method.");
+    }
+    
 
     // adds an element to the beginning of the list
     public void add(int data) {
@@ -80,12 +95,13 @@ public class MyLinkedList {
     }
 
     //appends an element to the end of the list
-    public void append(int data) {
+    public void append(double data) {
     		head = append(data, head);
     }
+    
     //private helper method to keep track of the current node through
     //recursive calls
-    private Node append(int data, Node curr) {
+    private Node append(double data, Node curr) {
     	
 	    	//if we are at the end of the list, make a new node
 	    	if (curr == null) { 
