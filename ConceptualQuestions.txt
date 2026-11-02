@@ -1,0 +1,27 @@
+Working with different Data Structures.For each scenario below
+pick one of the data structures we have covered so far- Lists, Stacks
+and Trees- which best suits the needs of the person in the scenario. 
+Then explain why you made your choice instead of picking the other data
+structures. Include the efficiency of the operations described in each
+situation.
+
+Adam is hosting a dinner party for all of his many friends and wants to 
+get ready before they arrive. He sets out plates, napkins and silverware 
+so that when guests start arriving they can grab what they need and start
+helping themselves to Adam's delicious cooking. 
+
+Baal is planting an apple orchard in his backyard. He decides to plant all
+of his apple trees in one big line instead of a more senseable arrangement
+because he has not yet learned about maps in his Computer science courses
+and wants to use a data structure he is more familiar with to store
+information on his trees. He may want to go back to his records and record 
+that he watered a given tree or record how many apples it produced, but he 
+will rarely need to add more trees to his records. 
+
+Claudia is an intrepid student in CMSC131 who is trying to organize her
+notes about all of the Java library classes. Remember that all classes 
+are subclasses of the Object class. A class has exactly one direct
+superclass, but any number of subclasses. She may want to later add notes
+for a new class she is learning about without reorganizing her old notes. 
+And of course she wants to routinely look through her notes to refresh her 
+knowledge on certain topics. 
